@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Switch, Route, Redirect, useLocation } from "react-router-dom";
+import {Routes, Route, Navigate, useLocation } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
 import Main from "./pages/Main";
 import SignUp from "./pages/SignUp";
@@ -32,7 +32,7 @@ const App = () => {
 						<AudioPlayer />
 					</Fragment>
 				)}
-			<Switch>
+			<Routes>
 				<Route exact path="/" component={Main} />
 				<PrivateRoute exact user={user} path="/home" component={Home} />
 				<PrivateRoute
@@ -55,13 +55,13 @@ const App = () => {
 					component={Playlist}
 				/>
 				<PrivateRoute exact user={user} path="/me" component={Profile} />
-				{user && <Redirect from="/signup" to="/home" />}
-				{user && <Redirect from="/login" to="/home" />}
+				{user && <Navigate from="/signup" to="/home" />}
+				{user && <Navigate from="/login" to="/home" />}
 				<Route path="/signup" component={SignUp} />
 				<Route path="/login" component={Login} />
 				<Route path="/not-found" component={NotFound} />
-				<Redirect to="/not-found" />
-			</Switch>
+				<Navigate to="/not-found" />
+			</Routes>
 		</Fragment>
 	);
 }
