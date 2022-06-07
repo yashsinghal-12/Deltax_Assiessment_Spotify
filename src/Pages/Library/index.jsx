@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import Playlists from "../../components/Playlists";
+import Playlists from "../../Components/Playlist";
 import playlistImg from "../../images/rock.jpg";
 import styles from "./styles.module.scss";
 
 const playlists = [
-	{ _id: 1, img: playlistImg, name: "Today's Top Songs", desc: "By Jahangeer" },
+	{ _id: 1, img: playlistImg, name: "Today's Top Songs", desc: "By yash" },
 ];
 
 const Library = () => {

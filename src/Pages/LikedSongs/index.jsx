@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import Song from "../../components/Song";
+import Song from "../../Components/Song";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import styles from "./styles.module.scss";
 import likeImg from "../../images/like.jpg";

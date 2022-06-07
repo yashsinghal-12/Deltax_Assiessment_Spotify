@@ -1,19 +1,19 @@
 import { Fragment } from "react";
-import {Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
-import Main from "./pages/Main";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
-import NotFound from "./pages/NotFound";
-import Home from "./pages/Home";
-import Library from "./pages/Library";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
-import AudioPlayer from "./components/AudioPlayer";
-import Playlist from "./pages/Playlist";
-import Search from "./pages/Search";
-import LikedSongs from "./pages/LikedSongs";
-import Profile from "./pages/Profile";
+import Main from "./Pages/Main";
+import SignUp from "./Pages/SignUp";
+import Login from "./Pages/Login";
+import NotFound from "./Pages/NotFound";
+import Home from "./Pages/Home";
+import Library from "./Pages/Library";
+import Sidebar from "./Components/Sidebar";
+import Navbar from "./Components/Navbar";
+import AudioPlayer from "./Components/AudioPlayer";
+import Playlist from "./Pages/Playlist";
+import Search from "./Pages/Search";
+import LikedSongs from "./Pages/LikedSongs";
+import Profile from "./Pages/Profile";
 
 const App = () => {
 	const user = true;
@@ -64,6 +64,6 @@ const App = () => {
 			</Routes>
 		</Fragment>
 	);
-}
+};
 
 export default App;

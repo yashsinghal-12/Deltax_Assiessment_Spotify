@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
-import Song from "../../components/Song";
-import Playlists from "../../components/Playlists";
+import Song from "../../Components/Song";
+import Playlists from "../../Components/Playlist";
 import { IconButton } from "@mui/material";
 import peaches from "../../images/peaches.jpg";
 import playlistImg from "../../images/rock.jpg";

@@ -1,10 +1,10 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import record from "../../images/record.svg";
 import recordArm from "../../images/record-arm.svg";
 import styles from "./styles.module.scss";
 
 const NotFound = () => {
-	const history = useHistory();
+	const history = useNavigate();
 
 	return (
 		<div className={styles.container}>

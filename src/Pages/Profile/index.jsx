@@ -1,9 +1,9 @@
 import { useState } from "react";
 import Joi from "joi";
-import TextField from "../../components/Inputs/TextField";
-import Select from "../../components/Inputs/Select";
-import Radio from "../../components/Inputs/Radio";
-import Button from "../../components/Button";
+import TextField from "../../Components/Inputs/TextField";
+import Select from "../../Components/Inputs/Select";
+import Radio from "../../Components/Inputs/Radio";
+import Button from "../../Components/Button";
 import styles from "./styles.module.scss";
 
 const months = [

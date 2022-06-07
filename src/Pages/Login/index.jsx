@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Joi from "joi";
-import TextField from "../../components/Inputs/TextField";
-import Checkbox from "../../components/Inputs/Checkbox";
-import Button from "../../components/Button";
+import TextField from "../../Components/Inputs/TextField";
+import Checkbox from "../../Components/Inputs/Checkbox";
+import Button from "../../Components/Button";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import AppleIcon from "@mui/icons-material/Apple";
 import GoogleIcon from "@mui/icons-material/Google";

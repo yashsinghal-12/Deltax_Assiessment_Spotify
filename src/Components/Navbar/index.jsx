@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useHistory, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { ClickAwayListener } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
@@ -13,7 +13,7 @@ import styles from "./styles.module.scss";
 
 const Navbar = () => {
 	const [menu, setMenu] = useState(false);
-	const history = useHistory();
+	const history = useNavigate();
 
 	return (
 		<div className={styles.container}>
@@ -32,7 +32,7 @@ const Navbar = () => {
 					onClick={() => setMenu(!menu)}
 				>
 					<AccountCircleIcon />
-					<p>Jahangeer</p>
+					<p>Yash singhal</p>
 					{menu ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
 				</div>
 			</div>

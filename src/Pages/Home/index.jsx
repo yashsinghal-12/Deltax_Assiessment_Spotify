@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import Playlists from "../../components/Playlists";
+import Playlists from "../../Components/Playlist";
 import styles from "./styles.module.scss";
 import playlistImg from "../../images/rock.jpg";
 
 const playlists = [
-	{ _id: 1, img: playlistImg, name: "Today's Top Songs", desc: "By Jahangeer" },
+	{ _id: 1, img: playlistImg, name: "Today's Top Songs", desc: "By yash" },
 ];
 
 const Home = () => {

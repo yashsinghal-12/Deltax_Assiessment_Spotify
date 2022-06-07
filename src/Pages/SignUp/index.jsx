@@ -2,11 +2,11 @@ import { useState } from "react";
 import Joi from "joi";
 import { Link } from "react-router-dom";
 import passwordComplexity from "joi-password-complexity";
-import TextField from "../../components/Inputs/TextField";
-import Select from "../../components/Inputs/Select";
-import Radio from "../../components/Inputs/Radio";
-import Checkbox from "../../components/Inputs/Checkbox";
-import Button from "../../components/Button";
+import TextField from "../../Components/Inputs/TextField";
+import Select from "../../Components/Inputs/Select";
+import Radio from "../../Components/Inputs/Radio";
+import Checkbox from "../../Components/Inputs/Checkbox";
+import Button from "../../Components/Button";
 import logo from "../../images/black_logo.svg";
 import styles from "./styles.module.scss";
 
