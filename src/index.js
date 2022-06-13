@@ -1,14 +1,12 @@
 import React from "react";
-import createRoot from "react-dom/client";
+import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import App from "./App";
 import "react-toastify/dist/ReactToastify.css";
 import "./global.css";
-const rootE = document.getElementById("root");
-const root = createRoot(rootE);
 
-root.render(
+ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<App />
@@ -21,6 +19,6 @@ root.render(
 				icon={false}
 			/>
 		</BrowserRouter>
-	</React.StrictMode>
-	//document.getElementById("root")
-);
+	</React.StrictMode>,
+	document.getElementById("root")
+);s
